@@ -9,7 +9,7 @@ public class UserRegisterInput implements Serializable{
     private String email;
     private String street;
     //todo make password non-serializable
-    private String password;
+    private transient String password;
 
     public UserRegisterInput() {
     }

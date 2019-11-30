@@ -9,6 +9,9 @@ import java.io.*;
 public class SerializationExercise {
 
     public void saveObject(File file, UserRegisterInput object){
+        FileOutputStream fout = new FileOutputStream("C:\\address.ser");
+        ObjectOutputStream oos = new ObjectOutputStream(object);
+        oos.writeObject(MyClassList);
         //todo create file
         //todo write object into file
     }
